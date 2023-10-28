@@ -45,7 +45,7 @@ async function sendDailyPushNotification() {
   const notification = {
     headings: generateHeadings(),
     contents: generateContents(),
-    included_segments: ["Subscribed Users"],
+    included_segments: ["Total Subscriptions"],
     delayed_option: "last-active",
   };
   try {
