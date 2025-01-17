@@ -27,170 +27,256 @@
         <li><a href="#method">Abordagem</a></li>
       </ul>
     </nav>
-    <header id="home" class="header__container">
-      <div class="header__image">
-        <div class="header__image__card header__image__card-1">
-          <span><i class="ri-key-line"></i></span>
-          Gestalt
+    <main class="content_main">
+      <header id="home" class="header__container">
+        <div class="header__image">
+          <div class="header__image__card header__image__card-1">
+            <span><i class="ri-key-line"></i></span>
+            Gestalt
+          </div>
+          <div class="header__image__card header__image__card-2">
+            <span><i class="ri-passport-line"></i></span>
+            Atendimento Online
+          </div>
+          <div class="header__image__card header__image__card-3">
+            <span><i class="ri-map-2-line"></i></span>
+            Atendimento Presencial
+          </div>
+          <div class="header__image__card header__image__card-4">
+            <span><i class="ri-guide-line"></i></span>
+            Psicologia Clínica
+          </div>
+          <img src="assets/dora.jpg" alt="header" class="img-dora" />
         </div>
-        <div class="header__image__card header__image__card-2">
-          <span><i class="ri-passport-line"></i></span>
-          Atendimento Online
-        </div>
-        <div class="header__image__card header__image__card-3">
-          <span><i class="ri-map-2-line"></i></span>
-          Atendimento Presencial
-        </div>
-        <div class="header__image__card header__image__card-4">
-          <span><i class="ri-guide-line"></i></span>
-          Psicologia Clínica
-        </div>
-        <img src="assets/dora.jpg" alt="header" class="img-dora" />
-      </div>
-      <div class="header__content">
-        <h1>AUTOCONHECIMENTO<br /><span>RECONECTE-SE </span> COM VOCÊ MESMO</h1>
-        <!-- <p>
+        <div class="header__content">
+          <h1>
+            AUTOCONHECIMENTO<br /><span>RECONECTE-SE </span> COM VOCÊ MESMO
+          </h1>
+          <!-- <p>
           Te ajudo a alcançar o equilíbrio emocional e a qualidade de vida que
           você merece, com um acompanhamento psicológico personalizado e
           acolhedor.
         </p> -->
-        <form action="/">
-          <div class="input__row">
-            <div class="input__group">
-              <h5>Local</h5>
-              <div>
-                <span><i class="ri-map-pin-line"></i></span>
-                <input type="text" placeholder="Baturité, CE e Online" />
+          <form action="/">
+            <div class="input__row">
+              <div class="input__group">
+                <h5>Local</h5>
+                <div>
+                  <span><i class="ri-map-pin-line"></i></span>
+                  <input type="text" placeholder="Baturité,  CE e Online" />
+                </div>
+              </div>
+              <div class="input__group">
+                <h5>Agenda</h5>
+                <div>
+                  <span><i class="ri-calendar-2-line"></i></span>
+                  <input type="text" placeholder="Agenda aberta" />
+                </div>
               </div>
             </div>
-            <div class="input__group">
-              <h5>Agenda</h5>
-              <div>
-                <span><i class="ri-calendar-2-line"></i></span>
-                <input type="text" placeholder="Agenda aberta" />
-              </div>
+            <button class="about__button" onclick="{redirecionarWhatsApp()}">
+              Contatar
+            </button>
+          </form>
+        </div>
+      </header>
+
+      <section id="importance" class="therapy__importance">
+        <div class="container">
+          <h2>A Importância da Terapia</h2>
+          <div class="header_section_therapy_importance">
+            <p>
+              A terapia é uma ferramenta essencial para promover o bem-estar
+              emocional, autoconhecimento e equilíbrio psicológico. Ela
+              proporciona um espaço seguro para que você possa explorar suas
+              emoções, pensamentos e comportamentos, com o apoio de um
+              profissional capacitado.
+            </p>
+            <div>
+              <img
+                src="https://cdn.pixabay.com/photo/2022/10/22/17/17/blender-7539656_1280.jpg"
+                alt=""
+              />
             </div>
           </div>
-          <button class="about__button" onclick="{redirecionarWhatsApp()}">
-            Contatar
-          </button>
-        </form>
-        <footer class="bar">
-          Copyright © 2024 Seven Software. Direitos reservados.
-        </footer>
-      </div>
-    </header>
+          <div class="benefits__cards">
+            <div class="benefit__card">
+              <span class="icon"><i class="fas fa-user"></i></span>
+              <h3>Autoconhecimento</h3>
+              <p>
+                A terapia ajuda a compreender suas emoções, comportamentos e
+                padrões de pensamento, promovendo uma maior consciência sobre si
+                mesmo.
+              </p>
+            </div>
+            <div class="benefit__card">
+              <span class="icon"><i class="fas fa-heartbeat"></i></span>
+              <h3>Controle do Estresse</h3>
+              <p>
+                Enfrentar os desafios da vida pode ser estressante. A terapia
+                oferece técnicas e estratégias para lidar melhor com as tensões
+                do dia a dia.
+              </p>
+            </div>
+            <div class="benefit__card">
+              <span class="icon"><i class="fas fa-heartbeat"></i></span>
 
-    <section id="importance" class="therapy__importance">
-      <div class="container">
-        <h2>A Importância da Terapia</h2>
-        <div class="header_section_therapy_importance">
-          <p>
-            A terapia é uma ferramenta essencial para promover o bem-estar
-            emocional, autoconhecimento e equilíbrio psicológico. Ela
-            proporciona um espaço seguro para que você possa explorar suas
-            emoções, pensamentos e comportamentos, com o apoio de um
-            profissional capacitado.
+              <h3>Melhoria nos Relacionamentos</h3>
+              <p>
+                Ao entender suas emoções e reações, você melhora sua comunicação
+                e conexão com os outros, fortalecendo relacionamentos pessoais e
+                profissionais.
+              </p>
+            </div>
+            <div class="benefit__card">
+              <span class="icon"><i class="fas fa-heartbeat"></i></span>
+
+              <h3>Bem-Estar Emocional</h3>
+              <p>
+                A terapia é uma forma eficaz de promover o equilíbrio emocional,
+                ajudando a lidar com sentimentos de tristeza, ansiedade ou
+                frustração.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="about__content">
+          <h2 class="about__title">Quem Sou Eu?</h2>
+          <h3 class="about__subtitle">Olá, é um prazer ter você por aqui.</h3>
+          <div class="about__image__responsive">
+            <div class="about__image__background_responsive"></div>
+            <img src="./assets/dora-about.jpeg" alt="Psicóloga Dora Gouveia" />
+          </div>
+          <p class="about__description">
+            Sou <strong>Dora Gouveia</strong>, psicóloga clínica, com
+            experiência em atendimentos online para pacientes em todo o Brasil.
+            Além de trabalhar com psicoterapia, também atuo na área da
+            <strong>psicologia organizacional</strong> e do trabalho, ministro
+            palestras e diversos treinamentos para o ambiente corporativo e
+            demais organizações.
           </p>
-          <div>
-            <img
-              src="https://cdn.pixabay.com/photo/2022/10/22/17/17/blender-7539656_1280.jpg"
-              alt=""
-            />
-          </div>
+          <button class="about__button" onclick="redirecionarWhatsApp()">
+            AGENDAR SESSÃO
+          </button>
         </div>
-        <div class="benefits__cards">
-          <div class="benefit__card">
-            <span class="icon"><i class="fas fa-user"></i></span>
-            <h3>Autoconhecimento</h3>
-            <p>
-              A terapia ajuda a compreender suas emoções, comportamentos e
-              padrões de pensamento, promovendo uma maior consciência sobre si
-              mesmo.
-            </p>
-          </div>
-          <div class="benefit__card">
-            <span class="icon"><i class="fas fa-heartbeat"></i></span>
-            <h3>Controle do Estresse</h3>
-            <p>
-              Enfrentar os desafios da vida pode ser estressante. A terapia
-              oferece técnicas e estratégias para lidar melhor com as tensões do
-              dia a dia.
-            </p>
-          </div>
-          <div class="benefit__card">
-            <span class="icon"><i class="fas fa-heartbeat"></i></span>
 
-            <h3>Melhoria nos Relacionamentos</h3>
-            <p>
-              Ao entender suas emoções e reações, você melhora sua comunicação e
-              conexão com os outros, fortalecendo relacionamentos pessoais e
-              profissionais.
-            </p>
-          </div>
-          <div class="benefit__card">
-            <span class="icon"><i class="fas fa-heartbeat"></i></span>
-
-            <h3>Bem-Estar Emocional</h3>
-            <p>
-              A terapia é uma forma eficaz de promover o equilíbrio emocional,
-              ajudando a lidar com sentimentos de tristeza, ansiedade ou
-              frustração.
-            </p>
-          </div>
+        <div class="about__image">
+          <div class="about__image__background"></div>
+          <img src="./assets/dora-about.jpeg" alt="Psicóloga Dora Gouveia" />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="about">
-      <div class="about__content">
-        <h2 class="about__title">Quem Sou Eu?</h2>
-        <h3 class="about__subtitle">Olá, é um prazer ter você por aqui.</h3>
-        <p class="about__description">
-          Sou <strong>Dora Gouveia</strong>, psicóloga clínica, com experiência
-          em atendimentos online para pacientes em todo o Brasil. Além de
-          trabalhar com psicoterapia, também atuo na área da
-          <strong>psicologia organizacional</strong> e do trabalho, ministro
-          palestras e diversos treinamentos para o ambiente corporativo e demais
-          organizações.
-        </p>
-        <button class="about__button" onclick="redirecionarWhatsApp()">
-          AGENDAR SESSÃO
-        </button>
-      </div>
+      <section id="method" class="about">
+        <div class="about__image">
+          <div class="about__image__background"></div>
+          <img src="assets/dora.jpg" alt="header" class="img-dora" />
+        </div>
+        <div class="about__content">
+          <h2 class="about__title">Gestalt</h2>
+          <h3 class="about__subtitle">MINHA ABORDAGEM.</h3>
+          <p class="about__description">
+            Oriento o meu trabalho pelo viés da
+            <strong>psicoterapia [TIPO]</strong>, psicóloga clínica, com
+            experiência em atendimentos online para pacientes em todo o Brasil.
+            Meu objetivo nas sessões é te auxiliar nessa jornada de
+            transformação e contribuir com novas perspectivas para as suas
+            questões.
+          </p>
+          <button class="about__button" onclick="redirecionarWhatsApp()">
+            AGENDAR SESSÃO EXPERIMENTAL GRATUITA
+          </button>
+        </div>
+      </section>
 
-      <div class="about__image">
-        <div class="about__image__background"></div>
-        <img src="./assets/dora-about.jpeg" alt="Psicóloga Sabrina Schelck" />
-      </div>
-    </section>
+      <section class="faq-section">
+        <h2 class="faq-title">Dúvidas Frequentes</h2>
+        <div class="faq-item">
+          <details>
+            <summary>Atende por plano de saúde?</summary>
+            <p>Não, não aceitamos planos de saúde específicos.</p>
+          </details>
+          <details>
+            <summary>Emite nota fiscal?</summary>
+            <p>
+              Sim, fornecemos nota fiscal para todas as consultas realizadas.
+            </p>
+          </details>
 
-    <section id="method" class="about">
-      <div class="about__image">
-        <div class="about__image__background"></div>
-        <img src="assets/dora.jpg" alt="header" class="img-dora" />
-      </div>
-      <div class="about__content">
-        <h2 class="about__title">Gestalt</h2>
-        <h3 class="about__subtitle">MINHA ABORDAGEM.</h3>
-        <p class="about__description">
-          Oriento o meu trabalho pelo viés da
-          <strong>psicoterapia [TIPO]</strong>, psicóloga clínica, com
-          experiência em atendimentos online para pacientes em todo o Brasil.
-          Meu objetivo nas sessões é te auxiliar nessa jornada de transformação
-          e contribuir com novas perspectivas para as suas questões.
-        </p>
-        <button class="about__button" onclick="redirecionarWhatsApp()">
-          AGENDAR SESSÃO EXPERIMENTAL GRATUITA
-        </button>
-      </div>
-    </section>
+          <details>
+            <summary>Qual público você atende?</summary>
+            <p>
+              Atendemos crianças, adolescentes, adultos e idosos em sessões
+              individuais ou familiares.
+            </p>
+          </details>
+
+          <details>
+            <summary>Quais são as opções de pagamento?</summary>
+            <p>
+              Oferecemos pagamento via cartão, transferência bancária ou Pix.
+            </p>
+          </details>
+
+          <details>
+            <summary>Quais são os horários de atendimento?</summary>
+            <p>
+              Nossos horários de atendimento são de segunda a sexta, das 9h às
+              18h.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Como faço para agendar a primeira sessão ou ter mais informações?
+            </summary>
+            <p>
+              Entre em contato pelo WhatsApp ou telefone para agendar sua
+              consulta inicial.
+            </p>
+          </details>
+        </div>
+
+        <footer class="faq-footer">
+          <div class="nav__logo">
+            <a href="#">Dora<span>Gouveia</span></a>
+          </div>
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/psi.doragouveia/#"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=5585994398111&text&type=phone_number&app_absent=0"
+              target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="tel:+5585994398111"><i class="fas fa-phone"></i></a>
+          </div>
+          <footer class="bar">
+            Copyright © 2025 Seven Software. Direitos reservados.
+          </footer>
+        </footer>
+      </section>
+    </main>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <script src="main.js"></script>
     <script>
       function redirecionarWhatsApp() {
