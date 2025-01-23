@@ -308,6 +308,15 @@
         const telefone = "5511912345678"; // Substitua pelo número desejado
         const mensagem = "Olá, gostaria de agendar uma consulta."; // Mensagem personalizada
         const url = `https://api.whatsapp.com/send/?phone=5585994398111&text&type=phone_number&app_absent=0`;
+
+        if (typeof analytics !== "undefined") {
+          analytics.logEvent("click_schedule_whatsapp", {
+            button_name: "Agendar Sessão Experimental",
+            action: "Redirecionar para WhatsApp",
+            timestamp: new Date().toISOString(),
+          });
+        }
+
         window.open(url, "_blank"); // Abre o link em uma nova aba
       }
     </script>
@@ -323,6 +332,26 @@
       gtag("js", new Date());
 
       gtag("config", "AW-10839161416");
+    </script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCFe6qeKpJHjSndb7jb04M6sGDvf1cGOM4",
+        authDomain: "psicologa-dora.firebaseapp.com",
+        projectId: "psicologa-dora",
+        storageBucket: "psicologa-dora.firebasestorage.app",
+        messagingSenderId: "113451760483",
+        appId: "1:113451760483:web:0ef4c3b32877b61b81f156",
+        measurementId: "G-QDS9ETFPH8",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
     </script>
   </body>
 </html>
